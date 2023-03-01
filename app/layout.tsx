@@ -1,5 +1,6 @@
-import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./globals.css";
+import Menubar from "./Menubar";
 
 export default function RootLayout({
   children,
@@ -9,7 +10,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>{children}</body>
+      <body>
+        <Menubar />
+        {children}
+      </body>
     </html>
   );
 }
