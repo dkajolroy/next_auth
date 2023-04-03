@@ -1,0 +1,10 @@
+button{
+  padding: 10px 20px ;
+  border: 1px solid white;
+  background: tomato;
+  color: white;
+  border-radius: 5px;
+}
+button:hover{
+  background: rgb(204, 1, 1);
+}
