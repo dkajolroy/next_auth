@@ -13,10 +13,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div>
-          <pre>Data:{JSON.stringify(data)}</pre>
-          <pre>Status:{JSON.stringify(status)}</pre>
-          <pre>Update:{JSON.stringify(update)}</pre>
+        <div className={styles.box}>
+          <p>
+            <b>Data</b>:{JSON.stringify(data)}
+          </p>
+          <p>
+            <b>Status</b>:{JSON.stringify(status)}
+          </p>
+          <p>
+            <b>Update</b>:{JSON.stringify(update)}
+          </p>
         </div>
         <div>
           <button onClick={() => signIn()}>Sign In</button>
